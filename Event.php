@@ -14,6 +14,7 @@ class Event
     public $date_debut;
     public $date_fin;
     public $site_organisateur;
+    public $alerte = '';
 
     function __construct($nom, $date_debut, $date_fin)
     {
@@ -37,6 +38,10 @@ class Event
         if (isset($this->site_organisateur))
             $array['site'] = $this->site_organisateur;
         return $array;
+    }
+
+    function addAlerte($lieu) {
+    $this->alerte.='<p><h1>Accident</h1><p>Un accident a eu lieu à ' . $lieu . ' à ' . date("H:i");
     }
 
 
