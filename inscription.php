@@ -13,7 +13,7 @@ if ($_POST['password'] == $_POST['confirmPassword']) {
     or die('Problème de sélection BD : ' . mysqli_error($link));
     $message = '<p><h1>Accident</h1><p>Un accident a eu lieu à ' . htmlspecialchars($_POST['lieu']) . ' à ' . date("H:i") . '</p></p>';
     $query = 'INSERT INTO \`ORGANISATEUR\`(\'NOM\', \'PRENOM\', \'PASSWD\', \'EMAIL\', \'TEL\') VALUES 
-  (\'' . htmlspecialchars($_POST['nom']) . '\', \'' . htmlspecialchars($_POST['prenom']) . '\', \'' . sha1(htmlspecialchars($_POST['password'])) . '\', \''
+  (\'' . htmlspecialchars($_POST['nom']) . '\', \'' . htmlspecialchars($_POST['prenom']) . '\', \' . MD5(' . htmlspecialchars($_POST['password']) . 'finmd5\') . \', \''
         . htmlspecialchars($_POST['email']) . '\', \'' . htmlspecialchars($_POST['tel']) . '\')';
     $resultat = mysqli_query($link, $query);
     if (!$resultat) {
@@ -21,7 +21,7 @@ if ($_POST['password'] == $_POST['confirmPassword']) {
     }
 }
 else {
-    echo 'mot de passe non identiques';
+    echo 'mots de passe non identiques';
 }
 header("index.html")
 ?>
