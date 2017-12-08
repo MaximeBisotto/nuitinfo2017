@@ -67,72 +67,33 @@
 		    </div>
   		</nav>
     </header>
-<body>
-<div class="container">
-    	<h1 class="header">Création d'évènement</h1>
-	    <div class="row">
 
-	    <form class="col s12" method="post" action="inscription.php">
-	    <div class="row">
+    <body>
+    	
+	    	<div class="container">
+		    		<div class="row">
+		    				<h2 class="header">Signaler un probleme</h2>		    				
+		    					<div class="row">
+		    						<form action="post" class=" col s12 m2">
+		    							<div class="input-field col s12">
+								          <input id="lieu" name="lieu" type="text" class="validate">
+								          <label for="lieu">Lieu</label>
+								        </div>
+								        <button class="btn waves-effect waves-light col s12" type="submit" name="action">Signaler
+									        <i class="material-icons right">send</i>
+									  	</button>
+		    						</form>
+		    					</div>		    						          
+					</div>					        
+		    </div>
+      <!--Import jQuery before materialize.js-->
+      
+      <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+      	 $(".button-collapse").sideNav();
+      </script>
+      
+    </body>
+  </html>
 
-	      	<div class="input-field col s12 m6">
-	          <input id="nomEvent" type="text" name="nomEvent" class="validate">
-	          <label for="nomEvent">Nom d'évènement</label>
-	        </div>
-	    </div>
-
-	    <div class="row">
-	        <div class="input-field col s12 m6">
-	          <input id="dateEvent" name="dateEvent" type="date" class="datepicker">
-	          <label for="dateEvent">Date début</label>
-	        </div>
-	        <div class="input-field col s12 m6">
-	          <input id="hourEvent" name="hourEvent" type="text" class="timepicker">
-	          <label for="hourEvent">Heure</label>
-	        </div>
-	    </div>
-
-	    <div class="row">
-	        <div class="input-field col s12 m6">
-	          <input id="dateEvent" name="dateEvent" type="date" class="datepicker">
-	          <label for="dateEvent">Date fin</label>
-	        </div>
-	        <div class="input-field col s12 m6">
-	          <input id="hourEvent" name="hourEvent" type="text" class="timepicker">
-	          <label for="hourEvent">Heure</label>
-	        </div>
-	    </div>
-
-	    </div>
-	    <button class="btn waves-effect waves-light" type="submit" name="action">Créer
-		<i class="material-icons right">send</i>
-		</button>
-	    </form>
-	  </div>
-  </div>
-<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script>
-	$(".button-collapse").sideNav();
-	$('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15, // Creates a dropdown of 15 years to control year,
-    today: 'Today',
-    clear: 'Clear',
-    close: 'Ok',
-    closeOnSelect: false // Close upon selecting a date,
-  	});
-	$('.timepicker').pickatime({
-    default: 'now', // Set default time: 'now', '1:30AM', '16:30'
-    fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
-    twelvehour: false, // Use AM/PM or 24-hour format
-    donetext: 'OK', // text for done-button
-    cleartext: 'Clear', // text for clear-button
-    canceltext: 'Cancel', // Text for cancel-button
-    autoclose: false, // automatic close timepicker
-    ampmclickable: true, // make AM PM clickable
-    aftershow: function(){} //Function for after opening timepicker
-  	});
-</script>
-</body>
-</html>
