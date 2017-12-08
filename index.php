@@ -17,9 +17,9 @@
     	  <li class="divider"></li>
 		  <li><a href="prevenir.html" class="center">Prévenir</a></li>
 		  <li class="divider"></li>
-		  <li><a href="#!" class="center">Signaler</a></li>
+		  <li><a href="signaler.html" class="center">Signaler</a></li>
 		  <li class="divider"></li>
-		  <li><a href="signaler.html" class="center">Assiter</a></li>
+		  <li><a href="asister.html" class="center">Assiter</a></li>
 		</ul>
 		<ul id="accident_drop_down_top" class="dropdown-content center">
 		  <li class="divider"></li>
@@ -27,13 +27,13 @@
 		  <li class="divider"></li>
 		  <li><a href="signaler.html" class="center">Signaler</a></li>
 		  <li class="divider"></li>
-		  <li><a href="signaler.html" class="center">Assiter</a></li>
+		  <li><a href="asister.html" class="center">Assiter</a></li>
 		</ul>
 		<ul id="compte_drop_down_top" class="dropdown-content">
     	  <li class="divider"></li>
 		  <li><a href="event.html" class="center">Évènements</a></li>
 		  <li class="divider"></li>
-		  <li><a href="signaler.html" class="center">Options</a></li>
+		  <li><a href="#!" class="center">Options</a></li>
 		  <li class="divider"></li>
 		  <li><i href="#!" class="material-icons center">power_settings_new</i></li>
 		</ul>
@@ -41,7 +41,7 @@
     	  <li class="divider"></li>
 		  <li><a href="event.html" class="center">Évènements</a></li>
 		  <li class="divider"></li>
-		  <li><a href="signaler.html" class="center">Options</a></li>
+		  <li><a href="#!" class="center">Options</a></li>
 		  <li class="divider"></li>
 		  <li><i href="#!" class="material-icons center">power_settings_new</i></li>
 		</ul>
