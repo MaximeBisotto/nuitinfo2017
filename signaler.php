@@ -6,7 +6,6 @@
  * Time: 00:27
  */
 
-
-function addAlerte($lieu) {
-    ajoutBD('<p><h1>Accident</h1><p>Un accident a eu lieu à ' . htmlspecialchars($lieu) . ' à ' . date("H:i"). '</p></p>');
-}
+    ajoutBD('<p><h1>Accident</h1><p>Un accident a eu lieu à ' . htmlspecialchars($_POST['lieu']) . ' à ' . date("H:i"). '</p></p>');
+    header("index.html")
+?>
