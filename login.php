@@ -7,6 +7,9 @@
  */
 session_start();
 
+if(isset($_SESSION['logged']) && $_SESSION['logged'] == true) {
+    header("index.html");
+}
 
 $bdd = new PDO('mysql:host=localhost;dbname=phpmyadmin;charset=utf8', 'phpmyadmin', 'nuitinfo');
 

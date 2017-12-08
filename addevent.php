@@ -14,5 +14,5 @@ if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
         "', '" . date ("Y-m-d H:i:s", date_create_from_format("j F, YGi", $_POST['fin'] . $_POST['hfin'])) . "', '')");
     header("Location: /success.php",TRUE,303);
 } else {
-    //TODO Erreur login :(
+    header("Location: /erreur.php?erreur=not_logged_in",TRUE,303);
 }

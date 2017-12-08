@@ -5,7 +5,7 @@
  * Date: 07/12/2017
  * Time: 22:09
  */
-
+session_start();
 if ($_POST['password'] == $_POST['confirmPassword']) {
     $link = mysqli_connect('localhost', 'phpmyadmin', 'nuitinfo')
     or die('Problème de connection serveur : ' . mysqli_connect_error());
@@ -19,6 +19,12 @@ if ($_POST['password'] == $_POST['confirmPassword']) {
     if (!$resultat) {
         echo 'Impossible d\'executer la requete ', $query, ' : ', mysqli_error($link);
     }
+    $_SESSION['logged'] = true;
+    $_SESSION['nom'] = $_POST['nom'];
+    $_SESSION['prenom'] = $_POST['prenom'];
+    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['tel'] = $_POST['tel'];
+    header("Location: /success.php",TRUE,303);
 }
 else {
     echo 'mots de passe non identiques';
