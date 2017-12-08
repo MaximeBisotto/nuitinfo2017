@@ -6,8 +6,6 @@
  * Time: 22:15
  */
 
-
-
 class Event
 {
     public $nom;
