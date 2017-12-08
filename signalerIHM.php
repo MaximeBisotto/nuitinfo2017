@@ -18,7 +18,7 @@ echo 'Impossible d\'executer la requete ', $query, ' : ', mysqli_error($link);
 }
 while($a=$resultat->fetch())
 {
-    echo $a['message_alert'];
+    echo $a['MESSAGE_ALERT'];
 }
 $resultat->closeCursor();
 ?>
