@@ -6,7 +6,7 @@
  * Time: 22:09
  */
 
-if ($_POST['password'] == $_POST['confirmPasswd']) {
+if ($_POST['password'] == $_POST['confirmPassword']) {
     $link = mysqli_connect('localhost', 'phpmyadmin', 'nuitinfo')
     or die('Problème de connection serveur : ' . mysqli_connect_error());
     mysqli_select_db($link, 'phpmyadmin')
