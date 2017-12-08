@@ -13,12 +13,12 @@ if(isset($_SESSION['logged']) && $_SESSION['logged'] == true) {
 
 $bdd = new PDO('mysql:host=localhost;dbname=phpmyadmin;charset=utf8', 'phpmyadmin', 'nuitinfo');
 
-if (isset($_POST['login']) && isset($_POST['pass'])) {
+if (isset($_POST['login']) && isset($_POST['password'])) {
     $result = $bdd->query("SELECT * FROM ORGANISATEUR WHERE EMAIL=". $_POST['login']);
     if (mysqli_num_rows($result)==0) {
         //TODO No user
     } else {
-        if ($result['PASSWD'] != $_POST['pass']) {
+        if ($result['PASSWD'] != md5($_POST['password'])) {
             //TODO Invalid pass
         } else {
             $_SESSION['logged'] = true;

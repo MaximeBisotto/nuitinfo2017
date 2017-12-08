@@ -12,7 +12,7 @@ if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
     $bdd->query("INSERT INTO EVENTS('nom','debut','fin','site') VALUES ('" . $_POST['nom'] ."', '".
         date ("Y-m-d H:i:s", date_create_from_format("j F, YGi", $_POST['debut'] . $_POST['hdebut'])) .
         "', '" . date ("Y-m-d H:i:s", date_create_from_format("j F, YGi", $_POST['fin'] . $_POST['hfin'])) . "', '')");
-    header("Location: /success.php",TRUE,303);
+    header("Location: /succes.php",TRUE,303);
 } else {
     header("Location: /erreur.php?erreur=not_logged_in",TRUE,303);
 }

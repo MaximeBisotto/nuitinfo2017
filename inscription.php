@@ -25,7 +25,7 @@ if ($_POST['password'] == $_POST['confirmPassword']) {
     $_SESSION['prenom'] = $_POST['prenom'];
     $_SESSION['email'] = $_POST['email'];
     $_SESSION['tel'] = $_POST['tel'];
-    header("Location: /success.php",TRUE,303);
+    header("Location: /succes.html",TRUE,303);
 }
 else {
     echo 'mots de passe non identiques';
