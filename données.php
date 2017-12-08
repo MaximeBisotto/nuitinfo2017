@@ -128,9 +128,7 @@
                             }
                         ?>
 
-		    					<div class="row">
-		    						<div class="card-panel teal" style="color: white">caca</div>
-		    					</div>
+
 		    					<!-- Fin -->					          
 					</div>					        
 		    </div>
