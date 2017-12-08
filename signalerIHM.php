@@ -23,7 +23,7 @@ while($a=$resultat->fetch())
 {
     echo $a['MESSAGE_ALERT'];
 }
-$resultat->closeCursor();
+//$resultat->closeCursor();
 echo 'd';
 ?>
     <form action="signaler.php" method="post">
