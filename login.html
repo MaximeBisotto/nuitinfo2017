@@ -30,7 +30,7 @@
 		  <li><a href="asister.html" class="center">Assiter</a></li>
 		</ul>
 		<ul id="compte_drop_down_top" class="dropdown-content">
-		  <li class="divider"></li>
+			<li class="divider"></li>
 		  <li><a href="login.html" class="center">Login</a></li>
     	  <li class="divider"></li>
 		  <li><a href="event.html" class="center">Évènements</a></li>
@@ -41,11 +41,9 @@
 		</ul>
 		<ul id="compte_drop_down_side" class="dropdown-content">
     	  <li class="divider"></li>
-		  <li><a href="login.html" class="center">Login</a></li>
-    	  <li class="divider"></li>
 		  <li><a href="event.html" class="center">Évènements</a></li>
 		  <li class="divider"></li>
-		  <li><a href="#!" class="center">Options</a></li>
+		  <li><a href="signaler.html" class="center">Options</a></li>
 		  <li class="divider"></li>
 		  <li><a href="index.html" class="material-icons large center">power_settings_new</a></li>
 		</ul>
@@ -72,31 +70,26 @@
     	
 	    	<div class="container">
 		    		<div class="row">
-		    			<div class="col s12 m4">
-		    				<h2 class="header"> Nom</h2>
-		    				<div class="card-panel teal">
-		    					<a style="color: black" href="">
-		    					<div class="row">
-		    						<div class="col s2 m2">
-							              <i class="material-icons large white responsible">directions_car</i>
-		    						</div>
-		    					</div>
-		    					<div class="row">
-		    						<div class="col s3 m3">
-		    							<table class="centered">
-		    								<tr>
-		    									<th>Début</th>
-		    									<td>00/00/0000</td>
-		    								</tr>
-		    								<tr>
-		    									<th>Fin</th>
-		    									<td>00/00/0000</td>
-		    								</tr>
-		    							</table>
-		    						</div>
-		    					</div>
-		    					</a>			          
-					        </div>
+		    			<div class="col s12 m12">
+		    				<h2 class="header">Login</h2>
+		    					<form class="col s12" method="post" action="inscription.php">
+							      <div class="row">
+							        <div class="input-field col 12 m3 offset-m4">
+							          <input id="email" name="email" type="email" class="validate">
+							          <label for="email">Email</label>
+							        </div>
+							    </div>
+							      <div class="row">
+							        <div class="input-field col 12 m3 offset-m4">
+							          <input id="password" name="password" type="password" class="validate">
+							          <label for="password">Mot de passe</label>
+							        </div>
+							      </div>
+							      
+							      <button class="btn waves-effect waves-light col 12 m3 offset-m4" type="submit" name="action">Login
+								    <i class="material-icons right">send</i>
+								  </button>
+							    </form>
 					        
 		    			</div>
 

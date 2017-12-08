@@ -30,6 +30,8 @@
 		  <li><a href="asister.html" class="center">Assiter</a></li>
 		</ul>
 		<ul id="compte_drop_down_top" class="dropdown-content">
+		  <li class="divider"></li>
+		  <li><a href="login.html" class="center">Login</a></li>
     	  <li class="divider"></li>
 		  <li><a href="event.html" class="center">Évènements</a></li>
 		  <li class="divider"></li>
@@ -39,9 +41,11 @@
 		</ul>
 		<ul id="compte_drop_down_side" class="dropdown-content">
     	  <li class="divider"></li>
+		  <li><a href="login.html" class="center">Login</a></li>
+    	  <li class="divider"></li>
 		  <li><a href="event.html" class="center">Évènements</a></li>
 		  <li class="divider"></li>
-		  <li><a href="signaler.html" class="center">Options</a></li>
+		  <li><a href="#!" class="center">Options</a></li>
 		  <li class="divider"></li>
 		  <li><a href="index.html" class="material-icons large center">power_settings_new</a></li>
 		</ul>
@@ -68,7 +72,7 @@
     	<h1 class="header">Création d'évènement</h1>
 	    <div class="row">
 
-	    <form class="col s12" method="post" action="addevent.php">
+	    <form class="col s12" method="post" action="inscription.php">
 	    <div class="row">
 
 	      	<div class="input-field col s12 m6">
@@ -79,24 +83,26 @@
 
 	    <div class="row">
 	        <div class="input-field col s12 m6">
-	          <input id="dateEvent" name="debut" type="date" class="datepicker">
+	          <input id="dateEvent" name="dateEvent" type="date" class="datepicker">
 	          <label for="dateEvent">Date début</label>
 	        </div>
 	        <div class="input-field col s12 m6">
-	          <input id="hourEvent" name="hdebut" type="text" class="timepicker">
+	          <input id="hourEvent" name="hourEvent" type="text" class="timepicker">
 	          <label for="hourEvent">Heure</label>
 	        </div>
 	    </div>
 
 	    <div class="row">
 	        <div class="input-field col s12 m6">
-	          <input id="dateEvent" name="fin" type="date" class="datepicker">
+	          <input id="dateEvent" name="dateEvent" type="date" class="datepicker">
 	          <label for="dateEvent">Date fin</label>
 	        </div>
 	        <div class="input-field col s12 m6">
-	          <input id="hourEvent" name="hfin" type="text" class="timepicker">
+	          <input id="hourEvent" name="hourEvent" type="text" class="timepicker">
 	          <label for="hourEvent">Heure</label>
 	        </div>
+	    </div>
+
 	    </div>
 	    <button class="btn waves-effect waves-light" type="submit" name="action">Créer
 		<i class="material-icons right">send</i>
