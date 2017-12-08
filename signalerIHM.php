@@ -23,10 +23,11 @@ while($a=$resultat->fetch())
 {
     echo $a['MESSAGE_ALERT'];
 }
-$resultat->closeCursor();
+//$resultat->closeCursor();
+echo 'd';
 ?>
     <form action="signaler.php" method="post">
-        Signaler lieu problème: <input type="text" name="lieu">
+        Signaler le lieu du problème: <input type="text" name="lieu">
         <input type="submit">
     </form>
 </body>
