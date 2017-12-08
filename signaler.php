@@ -11,7 +11,7 @@ $link = mysqli_connect('localhost', 'phpmyadmin', 'nuitinfo')
 mysqli_select_db($link, 'phpmyadmin')
     or die('Problème de sélection BD : ' . mysqli_error($link));
 $message = '<p><h1>Accident</h1><p>Un accident a eu lieu à ' . htmlspecialchars($_POST['lieu']) . ' à ' . date("H:i"). '</p></p>';
-$query = 'INSERT INTO `ALERTE`(`MESSAGE_ALERT`) VALUES (' . $message . ')';
+$query = 'INSERT INTO `ALERTE`(`MESSAGE_ALERT`) VALUES (\'' . $message . '\')';
 $resultat = mysqli_query($link, $query);
 if (!$resultat) {
     echo 'Impossible d\'executer la requete ', $query, ' : ', mysqli_error($link);
