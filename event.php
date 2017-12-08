@@ -23,7 +23,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     	  <li class="divider"></li>
 		  <li><a href="prevenir.html" class="center">Prévenir</a></li>
 		  <li class="divider"></li>
-		  <li><a href="signaler.html" class="center">Signaler</a></li>
+		  <li><a href="signalerIHM.php" class="center">Signaler</a></li>
 		  <li class="divider"></li>
 		  <li><a href="asister.html" class="center">Assiter</a></li>
 		</ul>
@@ -31,7 +31,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 		  <li class="divider"></li>
 		  <li><a href="prevenir.html" class="center">Prévenir</a></li>
 		  <li class="divider"></li>
-		  <li><a href="signaler.html" class="center">Signaler</a></li>
+		  <li><a href="signalerIHM.php" class="center">Signaler</a></li>
 		  <li class="divider"></li>
 		  <li><a href="asister.html" class="center">Assiter</a></li>
 		</ul>
